@@ -1,0 +1,21 @@
+.navigation{
+  &-container{
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__item{
+    list-style-type: none;
+  }
+
+  &__link{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  &__image{
+    width: 2em;
+  }
+}
