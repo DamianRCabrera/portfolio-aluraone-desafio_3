@@ -2,10 +2,32 @@
   display: flex;
   flex-direction: column;
   padding: 2rem 0 0;
+
+  @media (min-width: 850px) {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
 
 .project {
   padding: 2.5rem 0 2.5rem;
+
+  @media (min-width: 850px) {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  &-text {
+    @media (min-width: 850px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      grid-column: 5/11;
+      grid-row: 1/2;
+      order: 2;
+      text-align: right;
+    }
+  }
 
   &__header{
     font-size: 1.5rem;
@@ -17,6 +39,10 @@
   &__where {
     letter-spacing: 1px;
     margin: 0;
+
+    @media (min-width: 850px){
+      font-size: 2rem;
+    }
   }
 
   &__title{
@@ -24,6 +50,10 @@
     font-family: 'Oxygen', sans-serif;
     font-size: 1.3rem;
     color: #86fbfb;
+
+    @media (min-width: 850px){
+      font-size: 2rem;
+    }
   }
 
   &__description{
@@ -44,6 +74,16 @@
   &__tech{
     &__title{
       text-decoration: underline;
+
+      @media (min-width: 850px){
+        font-size: 1.5rem;
+      }
+    }
+
+    &__item{
+      @media (min-width: 850px){
+        font-size: 1.5rem;
+      }
     }
 
     &__list{
@@ -52,6 +92,10 @@
       gap: 1rem;
       padding: 0;
       list-style-type: none;
+
+      @media (min-width: 850px) {
+        justify-content: flex-end;
+      }
     }
   }
 
@@ -62,8 +106,14 @@
     border-top: 2px solid #86fbfb;
     border-radius: 1rem;
 
+    @media (min-width: 850px) {
+      grid-column: 1/6;
+      grid-row: 1/2;
+    }
+
     &__image{
       width: 100%;
+      height: 100%;
       border-radius: 1rem;
     }
   }

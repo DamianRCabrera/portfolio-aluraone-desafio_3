@@ -1,9 +1,16 @@
 .navigation{
+  flex: 1;
+
   &-container{
     padding: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @media (min-width: 768px) {
+      justify-content: center;
+      gap: 1rem;
+    }
   }
 
   &__item{
