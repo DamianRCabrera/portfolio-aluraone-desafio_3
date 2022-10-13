@@ -1,6 +1,3 @@
-// font-family: 'Oxygen', sans-serif;
-// font-family: 'Oxygen Mono', monospace;
-
 .contact-info{
   max-width: 1200px;
   margin: auto;
@@ -33,6 +30,8 @@
 .contact{
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 800px;
   gap: 2rem;
 
   &__inputgroup{
@@ -42,6 +41,7 @@
     background-color: #ffffff;
     padding: 1rem;
     border-radius: .5rem;
+    flex: 1 1 100%;
 
     &__input{
       background-color: transparent;
@@ -50,10 +50,8 @@
       color: #000000;
       font-family: 'Oxygen', sans-serif;
       border-bottom: 2px solid transparent;
-
-      @media (min-width: 768px) {
-        width: 700px;
-      }
+      padding: 0.5rem 0;
+      font-size: 1.1rem;
 
       &:focus{
         border-bottom: 2px solid #0d314b;

@@ -429,7 +429,7 @@ body {
 .btn {
   align-items: center;
   background-color: #ff17e4;
-  border: 2px solid #85fafa;
+  border: 2px solid #ff17e4;
   cursor: pointer;
   display: inline-flex;
   font-weight: 600;
@@ -744,6 +744,8 @@ body {
 .contact {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 800px;
   gap: 2rem;
 }
 .contact__inputgroup {
@@ -753,6 +755,7 @@ body {
   background-color: #ffffff;
   padding: 1rem;
   border-radius: 0.5rem;
+  flex: 1 1 100%;
 }
 .contact__inputgroup__input {
   background-color: transparent;
@@ -761,11 +764,8 @@ body {
   color: #000000;
   font-family: "Oxygen", sans-serif;
   border-bottom: 2px solid transparent;
-}
-@media (min-width: 768px) {
-  .contact__inputgroup__input {
-    width: 700px;
-  }
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
 }
 .contact__inputgroup__input:focus {
   border-bottom: 2px solid #0d314b;
@@ -835,4 +835,9 @@ body {
 .footer-copy__content {
   text-align: center;
   font-family: "Oxygen", "sans-serif";
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=main.css.map */
