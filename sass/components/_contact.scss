@@ -1,0 +1,67 @@
+// font-family: 'Oxygen', sans-serif;
+// font-family: 'Oxygen Mono', monospace;
+
+.contact-info{
+  &__header{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  &__action{
+    font-family: 'Oxygen', sans-serif;
+  }
+
+  &__description{
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+}
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  &__inputgroup{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    background-color: #ffffff;
+    padding: .5rem;
+    border-radius: .5rem;
+    &__input{
+      background-color: transparent;
+      outline: none;
+      border: none;
+      color: #000000;
+      font-family: 'Oxygen', sans-serif;
+      border-bottom: 2px solid transparent;
+
+      &:focus{
+        border-bottom: 2px solid #0d314b;
+        transition: border 1s;
+      }
+    }
+
+    &__label{
+      cursor: pointer;
+      font-family: 'Oxygen', sans-serif;
+      color: #0d314b;
+      font-weight: 700;
+    }
+
+    &__textarea{
+      border: none;
+      outline: none;
+      color: #000000;
+      font-family: 'Oxygen', sans-serif;
+      resize: none;
+    }
+  }
+}

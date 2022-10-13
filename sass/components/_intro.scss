@@ -1,0 +1,42 @@
+.intro__image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.intro__title{
+  font-family: 'Oxygen', sans-serif;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.intro__hello {
+  margin: 0;
+  padding: 2rem 0 0 0;
+}
+
+.intro__name {
+  color: #86fbfb;
+  font-weight: 300;
+  padding: 1rem 0;
+}
+
+.intro__do {
+  font-weight: 400;
+  padding: 0 0 1rem 0;
+}
+
+.intro__content {
+  font-family: 'Oxygen', sans-serif;
+  line-height: 1.5;
+}
+
+.intro__description{
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.intro__link {
+  color: #e310cb;
+  font-size: 1.2rem;
+}

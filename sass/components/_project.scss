@@ -1,0 +1,70 @@
+.project-container{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 0;
+}
+
+.project {
+  padding: 2.5rem 0 2.5rem;
+
+  &__header{
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  &__where {
+    letter-spacing: 1px;
+    margin: 0;
+  }
+
+  &__title{
+    margin: .5rem 0;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 1.3rem;
+    color: #86fbfb;
+  }
+
+  &__description{
+    background-color: #171321;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    &__content{
+      font-family: 'Oxygen', sans-serif;
+      line-height: 1.5;
+
+      &__link{
+        color: #ff17e4;
+      }
+    }
+  }
+
+  &__tech{
+    &__title{
+      text-decoration: underline;
+    }
+
+    &__list{
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      padding: 0;
+      list-style-type: none;
+    }
+  }
+
+  &__imgcontainer{
+    background-color: #171321;
+    padding: 1rem;
+    border-left: 2px solid #86fbfb;
+    border-top: 2px solid #86fbfb;
+    border-radius: 1rem;
+
+    &__image{
+      width: 100%;
+      border-radius: 1rem;
+    }
+  }
+}

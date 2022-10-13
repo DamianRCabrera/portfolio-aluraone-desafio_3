@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Oxygen:wght@300;400;700&display=swap"); /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -311,6 +310,7 @@ template {
 
 body {
   background-color: #171321;
+  color: #ffffff;
 }
 
 body {
@@ -320,23 +320,62 @@ body {
 .main-header {
   display: flex;
   flex-direction: column;
-  margin: 3em 0 0 0;
+  padding: 3rem 1rem;
+}
+
+.main-intro {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.main-about {
+  display: flex;
+  flex-direction: column;
+  background-color: #0d314b;
+  padding: 3rem 1rem;
+  gap: 1em;
+}
+
+.main-formation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem 1rem;
+}
+
+.main-projects {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem;
+  background-color: #0d314b;
+}
+
+.main-contact {
+  background-color: #4b0d49;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem;
+}
+
+.main-footer {
+  display: flex;
+  padding: 3rem 1rem 1rem;
 }
 
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5em;
+  gap: 0.5rem;
 }
 .logo__image {
-  width: 3em;
+  width: 3rem;
 }
 .logo__title {
   font-family: "Oxygen", sans-serif;
   font-weight: 700;
-  font-size: 2em;
-  color: #ffffff;
+  font-size: 2rem;
 }
 
 .navigation-container {
@@ -349,11 +388,11 @@ body {
   list-style-type: none;
 }
 .navigation__link {
-  color: #ffffff;
   text-decoration: none;
+  color: #ffffff;
 }
 .navigation__image {
-  width: 2em;
+  width: 2rem;
 }
 
 .resume {
@@ -363,7 +402,6 @@ body {
   align-items: center;
   background-color: #ff17e4;
   border: 2px solid #ff17e4;
-  color: #ffffff;
   cursor: pointer;
   display: inline-flex;
   font-weight: 600;
@@ -376,9 +414,10 @@ body {
   text-align: center;
   text-decoration: none;
   transition: all 0.3s;
+  color: #fafafa;
 }
 .resume__button:focus {
-  color: #171e29;
+  color: #fafafa;
 }
 .resume__button:hover {
   background-color: #fd42e7;
@@ -387,4 +426,293 @@ body {
 .resume__button:active {
   background-color: #fd42e7;
   border-color: #fd42e7;
+}
+
+.intro__image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.intro__title {
+  font-family: "Oxygen", sans-serif;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.intro__hello {
+  margin: 0;
+  padding: 2rem 0 0 0;
+}
+
+.intro__name {
+  color: #86fbfb;
+  font-weight: 300;
+  padding: 1rem 0;
+}
+
+.intro__do {
+  font-weight: 400;
+  padding: 0 0 1rem 0;
+}
+
+.intro__content {
+  font-family: "Oxygen", sans-serif;
+  line-height: 1.5;
+}
+
+.intro__description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.intro__link {
+  color: #e310cb;
+  font-size: 1.2rem;
+}
+
+.separation {
+  background: linear-gradient(90deg, rgb(255, 23, 228) 0%, rgb(134, 251, 251) 100%);
+  height: 2px;
+}
+
+.about-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #171321;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid #86fbfb;
+  gap: 1rem;
+}
+.about__header {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  text-decoration: underline;
+}
+.about__image {
+  width: 5rem;
+  margin: 0;
+}
+.about__title {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.formation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+  border-radius: 1rem;
+  border: 2px solid #86fbfb;
+  overflow: hidden;
+  background-color: #0d314b;
+}
+.formation-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.formation__header {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  text-decoration: underline;
+}
+.formation__imgcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.formation__imgcontainer__image {
+  align-self: center;
+  width: 15em;
+  height: 5em;
+}
+.formation__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 1rem 2rem;
+}
+.formation__content__title {
+  font-size: 1.2rem;
+}
+.formation__text {
+  font-family: "Oxygen", sans-serif;
+  margin: 0;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0 0;
+}
+
+.project {
+  padding: 2.5rem 0 2.5rem;
+}
+.project__header {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+  text-decoration: underline;
+}
+.project__where {
+  letter-spacing: 1px;
+  margin: 0;
+}
+.project__title {
+  margin: 0.5rem 0;
+  font-family: "Oxygen", sans-serif;
+  font-size: 1.3rem;
+  color: #86fbfb;
+}
+.project__description {
+  background-color: #171321;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.project__description__content {
+  font-family: "Oxygen", sans-serif;
+  line-height: 1.5;
+}
+.project__description__content__link {
+  color: #ff17e4;
+}
+.project__tech__title {
+  text-decoration: underline;
+}
+.project__tech__list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0;
+  list-style-type: none;
+}
+.project__imgcontainer {
+  background-color: #171321;
+  padding: 1rem;
+  border-left: 2px solid #86fbfb;
+  border-top: 2px solid #86fbfb;
+  border-radius: 1rem;
+}
+.project__imgcontainer__image {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.contact-info__header {
+  font-family: "Oxygen", sans-serif;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-align: center;
+}
+.contact-info__action {
+  font-family: "Oxygen", sans-serif;
+}
+.contact-info__description {
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact__inputgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.contact__inputgroup__input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #000000;
+  font-family: "Oxygen", sans-serif;
+  border-bottom: 2px solid transparent;
+}
+.contact__inputgroup__input:focus {
+  border-bottom: 2px solid #0d314b;
+  transition: border 1s;
+}
+.contact__inputgroup__label {
+  cursor: pointer;
+  font-family: "Oxygen", sans-serif;
+  color: #0d314b;
+  font-weight: 700;
+}
+.contact__inputgroup__textarea {
+  border: none;
+  outline: none;
+  color: #000000;
+  font-family: "Oxygen", sans-serif;
+  resize: none;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oxygen", "sans-serif";
+  gap: 0.3rem;
+}
+.footer-header__name {
+  font-size: 1.5rem;
+  margin: 0;
+}
+.footer-header__about {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.footer-logos__logo {
+  width: 3rem;
+}
+
+.footer-copy__content {
+  text-align: center;
+  font-family: "Oxygen", "sans-serif";
 }/*# sourceMappingURL=main.css.map */

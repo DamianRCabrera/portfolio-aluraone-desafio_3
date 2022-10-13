@@ -4,7 +4,6 @@
     align-items: center;
     background-color: #ff17e4;
     border: 2px solid #ff17e4;
-    color: #ffffff;
     cursor: pointer;
     display: inline-flex;
     font-weight: 600;
@@ -17,9 +16,10 @@
     text-align: center;
     text-decoration: none;
     transition: all .3s;
+    color: #fafafa;
 
     &:focus {
-      color: #171e29;
+      color: #fafafa;
     }
 
     &:hover {

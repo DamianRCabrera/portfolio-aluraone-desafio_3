@@ -16,12 +16,25 @@
 
 // 4. Layout-related sections
 @use 'layout/main-header';
+@use 'layout/main-intro';
+@use 'layout/main-about';
+@use 'layout/main-formation';
+@use 'layout/main-projects';
+@use 'layout/main-contact';
+@use 'layout/main-footer';
 // @use 'layout/footer';
 
 // 5. Components
 @use 'components/logo';
 @use 'components/navigation';
-@use 'components/resume'
+@use 'components/resume';
+@use 'components/intro';
+@use 'components/separation';
+@use 'components/about';
+@use 'components/formation';
+@use 'components/project';
+@use 'components/contact';
+@use 'components/footer';
 
 // 6. Page-specific styles
 // @use 'pages/home';

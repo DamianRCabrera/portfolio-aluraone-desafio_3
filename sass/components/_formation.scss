@@ -1,0 +1,58 @@
+.formation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+  border-radius: 1rem;
+  border: 2px solid #86fbfb;
+  overflow: hidden;
+  background-color: #0d314b;
+
+  &-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__header{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    text-decoration: underline;
+  }
+
+  &__imgcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem;
+
+
+    &__image{
+      align-self: center;
+      width: 15em;
+      height: 5em;
+    }
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 1rem 2rem;
+
+    &__title{
+      font-size: 1.2rem;
+    }
+  }
+
+  &__text{
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+  }
+
+
+}
