@@ -796,6 +796,7 @@ body {
   border-bottom: 2px solid transparent;
   padding: 0.5rem 0;
   font-size: 1.1rem;
+  line-height: 1.5;
 }
 .contact__inputgroup__input:focus {
   border-bottom: 2px solid #0d314b;
@@ -807,6 +808,11 @@ body {
   color: #0d314b;
   font-weight: 700;
 }
+.contact__inputgroup__label__counter {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  padding-left: 1rem;
+}
 .contact__inputgroup__textarea {
   border: none;
   outline: none;
@@ -814,7 +820,7 @@ body {
   font-family: "Oxygen", sans-serif;
   resize: none;
   width: 100%;
-  height: 100px;
+  height: 150px;
   max-width: 700px;
 }
 
@@ -873,4 +879,9 @@ body {
 .resume {
   display: flex;
   justify-content: center;
+}
+
+.error {
+  color: red;
+  font-family: "Oxygen", "sans-serif";
 }/*# sourceMappingURL=main.css.map */
