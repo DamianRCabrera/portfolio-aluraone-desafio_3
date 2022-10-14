@@ -39,6 +39,10 @@
       align-self: center;
       width: 15em;
       height: 5em;
+
+      &:hover{
+        transform: scale(1.05);
+      }
     }
   }
 

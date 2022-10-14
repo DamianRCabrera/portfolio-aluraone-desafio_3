@@ -67,6 +67,10 @@
 
       &__link{
         color: #ff17e4;
+
+        &:hover{
+          color: #f848e3;
+        }
       }
     }
   }

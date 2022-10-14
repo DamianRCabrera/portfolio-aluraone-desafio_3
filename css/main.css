@@ -608,6 +608,9 @@ body {
   width: 15em;
   height: 5em;
 }
+.formation__imgcontainer__image:hover {
+  transform: scale(1.05);
+}
 .formation__content {
   display: flex;
   flex-direction: column;
@@ -691,6 +694,9 @@ body {
 }
 .project__description__content__link {
   color: #ff17e4;
+}
+.project__description__content__link:hover {
+  color: #f848e3;
 }
 .project__tech__title {
   text-decoration: underline;
@@ -851,6 +857,9 @@ body {
 }
 .footer-logos__logo {
   width: 3rem;
+}
+.footer-logos__logo:hover {
+  transform: scale(1.1);
 }
 
 .footer-copy__content {
