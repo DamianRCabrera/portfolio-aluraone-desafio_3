@@ -5,7 +5,7 @@
     padding: 0;
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
 
     @media (min-width: 768px) {
       justify-content: center;
@@ -14,10 +14,10 @@
   }
 
   &__item{
+    display: flex;
+    align-items: center;
     list-style-type: none;
     border: 2px solid transparent;
-    padding-bottom: .5rem;
-    padding: 0;
 
     &:hover{
       transform: scale(1.05);
