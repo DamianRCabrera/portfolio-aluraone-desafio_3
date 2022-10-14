@@ -15,11 +15,21 @@
 
   &__item{
     list-style-type: none;
+    border: 2px solid transparent;
+    padding-bottom: .5rem;
+
+    &:hover{
+      transform: scale(1.05);
+      border-bottom: 2px solid #e3119a;
+      transition: transform, border 0.5s;
+      background-color: #ffffff10;
+    }
   }
 
   &__link{
     text-decoration: none;
     color: #ffffff;
+    padding-bottom: .5rem;
   }
 
   &__image{

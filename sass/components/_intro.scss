@@ -39,4 +39,8 @@
 .intro__link {
   color: #e310cb;
   font-size: 1.2rem;
+
+  &:hover {
+    color: #f848e3;
+  }
 }

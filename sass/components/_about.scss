@@ -20,6 +20,13 @@
   gap: 1rem;
   flex: 1;
 
+  &:hover {
+    background-color: #018468;
+    transform: scale(1.05);
+    cursor: pointer;
+    color: #000000;
+  }
+
   &__header{
     font-size: 1.5rem;
     letter-spacing: 1px;
@@ -38,7 +45,6 @@
     font-size: 1.5rem;
     margin: 0;
     padding: 0;
-    color: #ffffff;
     text-align: center;
   }
 
